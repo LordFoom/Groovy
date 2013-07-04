@@ -7,7 +7,8 @@ import java.util.Random
 
 font = new Font("SansSerif", Font.BOLD, 46)
 
-happy_thoughts = new File("happy_thoughts.groovy").readLines()
+scriptDir = new File(getClass().protectionDomain.codeSource.location.path).parent
+happy_thoughts = new File(scriptDir+"/happy_thoughts.groovy").readLines()
 rand = new Random()
 message = happy_thoughts[rand.nextInt(happy_thoughts.size)]
 
