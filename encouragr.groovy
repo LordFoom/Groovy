@@ -5,6 +5,8 @@ import java.awt.Font
 import javax.swing.JFrame
 import java.util.Random
 
+println "Who's awesome?"
+
 font = new Font("SansSerif", Font.BOLD, 46)
 
 scriptDir = new File(getClass().protectionDomain.codeSource.location.path).parent
@@ -22,5 +24,4 @@ myFrame = new SwingBuilder().edt {
   }
 }
 
-
-
+println "You're awesome!"
