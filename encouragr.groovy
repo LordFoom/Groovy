@@ -17,7 +17,7 @@ message = happy_thoughts[rand.nextInt(happy_thoughts.size)]
 myFrame = new SwingBuilder().edt {
   frame(title:'You rock!', size:[140,100], show: true, pack:true, locationByPlatform: true, defaultCloseOperation:JFrame.EXIT_ON_CLOSE) {
     borderLayout()
-    textlabel = label(text:message, font: font, constraints: BL.CENTER)
+    textlabel = label(text:" "+message+" ", font: font, constraints: BL.CENTER)
     button(text:" It's True! ",
          actionPerformed: {myFrame.dispose()},
          constraints:BL.SOUTH)
